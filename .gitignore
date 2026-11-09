@@ -28,3 +28,8 @@ ENV/
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Vector Store local artifacts
+**/chroma_db/*
+!**/chroma_db/.gitkeep
+*.sqlite3

@@ -1,0 +1,18 @@
+Datheon Cloud Infrastructure Specification - Core Microservices Architecture
+Document ID: ARCH-SPEC-2024-v3
+Lead Architect: Cloud Operations Team
+
+1. Service Level Agreements (SLAs)
+The Datheon core microservices tier guarantees a 99.95% monthly uptime SLA. 
+Peak API latency must not exceed 120 milliseconds for p95 requests and 250 milliseconds for p99 requests.
+
+2. Caching Strategy and In-Memory Data Store
+All read-heavy entity lookups are cached through Redis Enterprise cluster (v7.2).
+Cache time-to-live (TTL) is strictly bounded to 15 minutes (900 seconds) for dynamic financial records,
+and 24 hours for static product catalogs.
+Eviction policy is configured as allkeys-lru (Least Recently Used).
+
+3. Database Replication and Disaster Recovery (DR)
+The primary transactional database is PostgreSQL with active-passive read replica clusters deployed across US-East and US-West.
+Recovery Point Objective (RPO) is configured for under 5 minutes.
+Recovery Time Objective (RTO) for automated region failover is under 15 minutes.
