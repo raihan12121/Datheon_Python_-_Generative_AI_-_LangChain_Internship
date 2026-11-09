@@ -1,0 +1,44 @@
+Marcus Vance
+Email: marcus.vance@techcode.org | Phone: (617) 555-0812 | Location: Boston, MA
+GitHub: https://github.com/marcusvance | Portfolio: https://marcusvance.io
+
+PROFESSIONAL SUMMARY
+Senior Full-Stack & Systems Engineer with 8+ years building enterprise SaaS platforms, high-throughput microservices, and AI-assisted workflow engines. Specializing in Python, TypeScript, Distributed Systems, and Next.js.
+
+EMPLOYMENT HISTORY
+
+Principal Software Engineer | VerveCloud Corp, Boston, MA
+August 2021 - Present
+- Direct architecture of core billing and subscription engine processing $40M+ in annual GMV.
+- Migrated monolith backend to modular FastAPI and Go microservices, reducing 95th percentile latency by 55%.
+- Implemented real-time synchronization utilizing WebSockets and Redis Pub/Sub.
+- Mentored junior and mid-level engineers and conducted 100+ code reviews.
+Technologies: Python, Go, FastAPI, React, TypeScript, Kafka, Docker, Kubernetes, AWS.
+
+Full Stack Software Engineer | Horizon Fintech, New York, NY
+June 2017 - July 2021
+- Developed interactive portfolio management dashboard using Next.js and Tailwind CSS.
+- Designed secure OAuth2 / OpenID Connect authentication pipelines.
+- Integrated automated unit and integration tests achieving 92% code coverage.
+Technologies: TypeScript, Node.js, Express, PostgreSQL, Redis, Docker.
+
+ACADEMIC BACKGROUND
+Northeastern University, Boston, MA
+Bachelor of Science in Software Engineering (2013 - 2017)
+Dean’s List, Capstone First Prize Award
+
+CORE COMPETENCIES
+- Programming: Python, TypeScript, JavaScript, Go, SQL, HTML/CSS
+- Frameworks: FastAPI, Django, React, Next.js, Node.js, Tailwind CSS
+- Databases & Messaging: PostgreSQL, MySQL, Redis, Apache Kafka, Elasticsearch
+- DevOps & Cloud: AWS (ECS, Lambda, RDS, S3), Docker, Terraform, GitHub Actions
+
+OPEN SOURCE & PROJECTS
+- DistributedQueue: Lightweight distributed message broker in Python with priority scheduling. (https://github.com/marcusvance/distributed-queue)
+- PromptBench: CLI benchmark tool for measuring LLM latency and prompt token overhead.
+
+CREDENTIALS
+- AWS Certified Solutions Architect - Associate (AWS, 2022)
+- Certified Kubernetes Administrator (CKA) (CNCF, 2023)
+
+SPOKEN LANGUAGES: English (Native), French (Intermediate)

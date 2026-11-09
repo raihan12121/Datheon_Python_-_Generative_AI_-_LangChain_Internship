@@ -1,0 +1,46 @@
+Elena Rostova
+elena.rostova@engineer.net | +1-206-555-0177 | Seattle, WA
+LinkedIn: linkedin.com/in/elena-rostova-dev | GitHub: github.com/elena-rostova | Web: https://elenarostova.dev
+
+PROFESSIONAL SUMMARY
+Lead Machine Learning Engineer with 6 years of expertise in NLP, agentic workflows, LLM fine-tuning, and scalable inference infrastructure. Proven track record of reducing latency, fine-tuning open-weights models, and productionizing multi-agent workflows.
+
+EXPERIENCE
+
+Lead ML Engineer | NeuralGrid Technologies, Seattle, WA (March 2021 - Present)
+* Lead a team of 6 engineers developing LLM reasoning pipelines and autonomous workflows.
+* Optimized PyTorch inference latency by 45% using TensorRT and vLLM.
+* Scaled vector database search across 50M embeddings with sub-50ms latency using pgvector and Qdrant.
+* Reduced model deployment cycle from 2 weeks to 2 hours with automated CI/CD eval loops.
+Tech Stack: Python, PyTorch, vLLM, Docker, Kubernetes, PostgreSQL, GCP.
+
+Senior Data Scientist | DataVanguard Inc., San Jose, CA (July 2019 - February 2021)
+* Built predictive customer churn and segmentation models on 10M+ daily events.
+* Deployed end-to-end ML training pipelines on AWS SageMaker and Apache Airflow.
+* Authored company-wide best practices for feature store implementation.
+Tech Stack: Python, Scikit-learn, XGBoost, Spark, AWS SageMaker, Airflow.
+
+EDUCATION
+University of Washington, Seattle, WA
+Master of Science in Computer Science & Engineering (2017 - 2019)
+GPA: 3.91 / 4.0 | Honors: Graduate Fellowship Award
+
+University of California, Davis
+Bachelor of Science in Applied Mathematics (2013 - 2017)
+GPA: 3.85 / 4.0 | Honors: Dean’s List
+
+TECHNICAL SKILLS
+- Languages: Python, C++, SQL, Go, Bash
+- Machine Learning & AI: PyTorch, Hugging Face, LangChain, vLLM, TensorRT, FAISS, LangGraph
+- Cloud & Infrastructure: Docker, Kubernetes, GCP Vertex AI, AWS SageMaker, Terraform, MLflow
+- Databases: PostgreSQL, Qdrant, Redis, BigQuery
+
+FEATURED PROJECTS
+- AgenticCodeReviewer: Multi-agent repository review system catching semantic bugs using AST analysis and LLMs. (github.com/elena-rostova/agentic-reviewer)
+- FastEmbeddingServer: High-concurrency embedding microservice written in Python/C++ achieving 2,500 RPS.
+
+CERTIFICATIONS
+- AWS Certified Machine Learning - Specialty (Amazon Web Services, 2023, ID: AWS-MLS-88219)
+- TensorFlow Developer Certificate (Google, 2020)
+
+LANGUAGES: English (Fluent), Russian (Native), German (Basic)

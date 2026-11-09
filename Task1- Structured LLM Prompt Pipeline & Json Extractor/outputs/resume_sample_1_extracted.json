@@ -1,0 +1,111 @@
+{
+  "candidate": {
+    "full_name": "Elena Rostova",
+    "email": "elena.rostova@engineer.net",
+    "phone": "+1-206-555-0177",
+    "location": "Seattle, WA",
+    "linkedin_url": "https://linkedin.com/in/elena-rostova-dev",
+    "github_url": "https://github.com/elena-rostova",
+    "portfolio_url": "https://elenarostova.dev"
+  },
+  "professional_summary": "Lead Machine Learning Engineer with 6 years of expertise in NLP, agentic workflows, LLM fine-tuning, and scalable inference infrastructure.",
+  "total_years_experience": 6.0,
+  "work_experience": [
+    {
+      "company": "NeuralGrid Technologies",
+      "role_title": "Lead ML Engineer",
+      "location": "Seattle, WA",
+      "start_date": "2021-03",
+      "end_date": "Present",
+      "is_current": true,
+      "responsibilities": [
+        "Lead a team of 6 engineers developing LLM reasoning pipelines",
+        "Optimized PyTorch inference latency by 45% using TensorRT and vLLM"
+      ],
+      "key_achievements": [
+        "Scaled vector database search across 50M embeddings with sub-50ms latency",
+        "Reduced model deployment cycle from 2 weeks to 2 hours"
+      ],
+      "technologies_used": [
+        "Python",
+        "PyTorch",
+        "vLLM",
+        "Docker",
+        "Kubernetes",
+        "PostgreSQL",
+        "GCP"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Washington",
+      "degree": "Master of Science",
+      "field_of_study": "Computer Science & Engineering",
+      "start_year": "2017",
+      "graduation_year": "2019",
+      "gpa": "3.91 / 4.0",
+      "honors": [
+        "Graduate Fellowship Award"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "skills": [
+        "Python",
+        "C++",
+        "SQL",
+        "Go"
+      ]
+    },
+    {
+      "category": "Machine Learning & AI",
+      "skills": [
+        "PyTorch",
+        "Hugging Face",
+        "LangChain",
+        "vLLM",
+        "TensorRT",
+        "FAISS"
+      ]
+    },
+    {
+      "category": "Cloud & Infrastructure",
+      "skills": [
+        "Docker",
+        "Kubernetes",
+        "GCP Vertex AI",
+        "AWS SageMaker",
+        "Terraform"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "AgenticCodeReviewer",
+      "description": "Multi-agent repository review system catching semantic bugs using AST analysis and LLMs.",
+      "role": "Creator & Lead Maintainer",
+      "technologies": [
+        "Python",
+        "AST",
+        "LangChain"
+      ],
+      "github_or_live_url": "https://github.com/elena-rostova/agentic-reviewer"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Machine Learning - Specialty",
+      "issuing_organization": "Amazon Web Services",
+      "issue_date": "2023",
+      "credential_id_or_url": "AWS-MLS-88219"
+    }
+  ],
+  "languages": [
+    "English",
+    "Russian",
+    "German"
+  ]
+}

@@ -1,0 +1,57 @@
+=============================================================
+              CYBERGUARD DEFENSE SYSTEMS LTD.
+           Official VAT Invoice - Document # CG-88291
+=============================================================
+Vendor Information:
+CyberGuard Defense Systems Ltd.
+Level 14, 100 Bishopsgate, London EC2N 4AG, United Kingdom
+Company Registration & VAT: GB 928 4102 77
+Email: accounts@cyberguard.example.co.uk | Phone: +44 20 7946 0912
+
+Customer / Recipient:
+Quantom Analytics Corp.
+VAT / Enterprise No: US-99218204
+404 Silicon Ave, Palo Alto, CA 94301, USA
+Contact: finance@quantomanalytics.com
+
+Invoice Date: 2024-11-01
+Due Date: 2024-12-01
+Reference PO: PO-QNT-2024-009
+
+Scope of Services & Products:
+1. Product SKU: CG-SIEM-PRO
+   Description: Enterprise SIEM Log Ingestion License (500GB/day Tier)
+   Qty: 1
+   Unit Price: $8,000.00
+   Discount: $0.00
+   Total: $8,000.00
+
+2. Product SKU: CG-ENDPOINT-AV
+   Description: Next-Gen Endpoint Detection & Response (250 Seats)
+   Qty: 250
+   Unit Price: $12.00
+   Discount: $2.00 per unit ($500.00 discount)
+   Total: $2,500.00
+
+3. Product SKU: CG-INCIDENT-RES
+   Description: On-Demand Incident Response Retainer (Quarterly)
+   Qty: 1
+   Unit Price: $2,500.00
+   Discount: $0.00
+   Total: $2,500.00
+
+-------------------------------------------------------------
+Subtotal: $13,000.00
+Standard VAT / Sales Tax (10.0%): $1,300.00
+Shipping & Freight: $0.00
+Total Discount: $500.00
+Grand Total Due: $14,300.00 USD
+-------------------------------------------------------------
+
+Wire Payment Instructions:
+Account Name: CyberGuard Defense Systems Ltd.
+Bank: Barclays Bank UK
+IBAN: GB29BARC20201598765432
+SWIFT / BIC: BARCGB22
+Terms: Due Net 30. All bank charges to be borne by payer.
+=============================================================
