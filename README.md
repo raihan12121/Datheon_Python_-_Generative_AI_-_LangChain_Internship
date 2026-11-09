@@ -10,7 +10,7 @@ Repository containing 4 enterprise AI engineering projects covering LLM prompt p
 | :---: | :--- | :---: | :--- |
 | **Task 1** | **[Structured LLM Prompt Pipeline & JSON Extractor](./Task1-%20Structured%20LLM%20Prompt%20Pipeline%20%26%20Json%20Extractor)** | ✅ **Completed** | Python 3, Pydantic v2, Google Gemini, OpenAI, Few-Shot Prompting |
 | **Task 2** | **[Document Q&A Assistant with RAG & Vector Embeddings](./Task2-%20Document%20Q%26A%20Assistant%20with%20Rag%20%26%20Vector%20Embeddings)** | ✅ **Completed** | LangChain, ChromaDB, RecursiveCharacterTextSplitter, Source Page Citations |
-| **Task 3** | **Multi-Tool Autonomous AI Agent** | 🔄 *Upcoming* | LangChain / LangGraph, Tool Calling, Agent Reasoning |
+| **Task 3** | **[Multi-Tool Autonomous AI Agent](./Task3-%20Multi-Tool%20Autonomous%20AI%20Agent)** | ✅ **Completed** | LangChain, ReAct Engine, DuckDuckGo Search, Safe Math AST, Local File Reader |
 | **Task 4** | **Interactive Full-Stack AI ChatBot with Streamlit** | 🔄 *Upcoming* | Streamlit, Multi-turn Chat, LLMs, UI/UX |
 
 ---
@@ -92,5 +92,52 @@ python main.py --demo
 python main.py --query "What is the mandatory retention period for inference metadata?"
 
 # Start interactive Q&A session
+python main.py --interactive
+```
+
+---
+
+## 🌟 Task 3: Multi-Tool Autonomous AI Agent
+
+### Overview
+Builds an autonomous AI agent capable of multi-step reasoning using the ReAct (Reasoning + Acting) loop. The agent dynamically plans, chooses, and executes tools to solve compound research and calculation problems:
+- **Real-time Web Search** via DuckDuckGo
+- **Safe Python Math Calculator** evaluating mathematical expressions securely
+- **Local File Reader** inspecting local JSON, CSV, and text files
+
+👉 **Full Project Documentation & Source Code**: [Task 3 Directory](./Task3-%20Multi-Tool%20Autonomous%20AI%20Agent)
+
+### 📸 Windows Terminal Execution Screenshots & Proof
+
+#### 1. Unit Test Suite (12/12 Tests Passing)
+![Task 3 Unit Tests Passing](./Task3-%20Multi-Tool%20Autonomous%20AI%20Agent/screenshots/agent_tests_run.png)
+
+#### 2. Multi-Step Compound Research Query Run
+![Task 3 Compound Query](./Task3-%20Multi-Tool%20Autonomous%20AI%20Agent/screenshots/agent_compound_query_run.png)
+
+#### 3. Interactive Console REPL Session
+![Task 3 Interactive Session](./Task3-%20Multi-Tool%20Autonomous%20AI%20Agent/screenshots/agent_interactive_run.png)
+
+---
+
+### Quick Start for Task 3
+
+```powershell
+# Navigate to Task 3 directory
+cd "Task3- Multi-Tool Autonomous AI Agent"
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run automated unit tests
+python -m unittest discover -v tests
+
+# Run end-to-end demonstration
+python main.py --demo
+
+# Run custom compound query
+python main.py --query "Find the 2025 engineering budget in enterprise_budget_2025.json and calculate the allocated budget per engineer based on headcount."
+
+# Start interactive console REPL
 python main.py --interactive
 ```

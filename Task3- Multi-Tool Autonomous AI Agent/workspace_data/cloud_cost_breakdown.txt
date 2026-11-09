@@ -1,0 +1,13 @@
+Datheon Cloud Cost Analysis (Q3 - Q4 2024 Actuals)
+Report Generated: October 2024
+
+Monthly Run Rates:
+- Google Cloud Platform (GCP - Vertex AI & BigQuery): $42,500 / month
+- Amazon Web Services (AWS - EC2 GPU Clusters & S3): $38,200 / month
+- Microsoft Azure (Azure OpenAI Service & Hybrid AD): $14,300 / month
+
+Total Monthly Cloud Run Rate: $95,000 / month
+Projected Annual Cloud Spend (12 Months): $1,140,000
+
+Recommendation:
+Migrating non-critical batch training jobs to spot instances can save approximately 18.5% annually.

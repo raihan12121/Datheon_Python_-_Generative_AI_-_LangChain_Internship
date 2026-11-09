@@ -1,0 +1,28 @@
+{
+  "fiscal_year": 2025,
+  "organization": "Datheon AI Technologies",
+  "currency": "USD",
+  "departments": {
+    "engineering": {
+      "allocated_budget": 4500000,
+      "cloud_infrastructure_cap": 1200000,
+      "headcount": 32,
+      "key_projects": ["Enterprise RAG", "Autonomous Agents", "Inference Gateway"]
+    },
+    "research_and_development": {
+      "allocated_budget": 2800000,
+      "cloud_infrastructure_cap": 850000,
+      "headcount": 14,
+      "key_projects": ["Foundation Model Fine-tuning", "Safety Alignment"]
+    },
+    "product_and_design": {
+      "allocated_budget": 1600000,
+      "cloud_infrastructure_cap": 150000,
+      "headcount": 12,
+      "key_projects": ["Full-Stack ChatBot", "UI Design System"]
+    }
+  },
+  "total_budget": 8900000,
+  "approved_by": "Executive Finance Committee",
+  "status": "APPROVED"
+}
