@@ -1,6 +1,8 @@
 # Task 3: Multi-Tool Autonomous AI Agent
+**Author:** Muhammad Raihan Molla  
+**Internship Project:** Datheon Python + Generative AI & LangChain
 
-A production-grade Autonomous AI Agent built with **LangChain**, **Python 3**, and the **ReAct (Reasoning + Acting)** framework. The agent autonomously plans, selects, and invokes tools to solve compound research and analytical tasks:
+An Autonomous AI Agent built with **LangChain**, **Python 3**, and the **ReAct (Reasoning + Acting)** framework. The agent autonomously plans, selects, and invokes tools to solve compound research and analytical tasks:
 1. **Real-time Web Search** (DuckDuckGo / DDGS)
 2. **Safe Python Math Calculator** (AST-evaluated mathematical engine)
 3. **Local Workspace File Reader** (inspects JSON, CSV, TXT, and Markdown files)

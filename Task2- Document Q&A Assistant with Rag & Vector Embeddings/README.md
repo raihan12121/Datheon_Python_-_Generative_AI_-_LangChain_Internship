@@ -1,6 +1,8 @@
 # Task 2: Document Q&A Assistant with RAG & Vector Embeddings
+**Author:** Muhammad Raihan Molla  
+**Internship Project:** Datheon Python + Generative AI & LangChain
 
-A production-grade Retrieval-Augmented Generation (RAG) system built with **LangChain**, **ChromaDB**, and **Python 3**. Ingests multi-page PDFs and text documents, recursively chunks content with metadata preservation, generates dense vector embeddings, and answers user queries strictly grounded in retrieved context with **source page citations**.
+A Retrieval-Augmented Generation (RAG) system built with **LangChain**, **ChromaDB**, and **Python 3**. Ingests multi-page PDFs and text documents, recursively chunks content with metadata preservation, generates dense vector embeddings, and answers user queries strictly grounded in retrieved context with **source page citations**.
 
 ---
 

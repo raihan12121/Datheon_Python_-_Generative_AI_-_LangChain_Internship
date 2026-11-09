@@ -1,6 +1,8 @@
 # Datheon AI & LangChain Internship Projects
+**Author:** Muhammad Raihan Molla  
+**Internship:** Datheon Python + Generative AI & LangChain
 
-Repository containing 4 enterprise AI engineering projects covering LLM prompt pipelines, retrieval-augmented generation (RAG), autonomous multi-tool AI agents, and full-stack interactive applications.
+Repository containing the four completed internship projects covering structured LLM prompt pipelines, retrieval-augmented generation (RAG) with page citations, autonomous multi-tool AI agents, and a full-stack interactive Streamlit chat application.
 
 ---
 

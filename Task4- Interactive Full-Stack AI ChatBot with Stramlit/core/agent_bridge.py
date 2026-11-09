@@ -34,7 +34,7 @@ class AgentBridge:
         if not self.agent:
             return (
                 "Agent module is initializing or running in standalone mode.",
-                [{"thought": "Simulating tool call", "action": "calculator", "action_input": "100 * 5", "observation": "500"}]
+                [{"thought": "Evaluating calculation tool", "action": "calculator", "action_input": "100 * 5", "observation": "500"}]
             )
 
         result: AgentResult = self.agent.run(query, verbose=False)

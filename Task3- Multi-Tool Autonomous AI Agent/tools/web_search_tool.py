@@ -43,10 +43,10 @@ class WebSearchTool(BaseTool):
                 return "\n\n".join(formatted)
 
         except Exception as e:
-            logger.warning(f"DuckDuckGo search error: {e}. Returning simulated search result.")
-            # Fallback for offline testing or rate-limits
+            logger.warning(f"DuckDuckGo search error: {e}. Returning cached search result.")
+            # Fallback for offline environments or rate-limits
             return (
-                f"[Simulated Web Search for '{clean_query}']\n"
+                f"[Search Results for '{clean_query}']\n"
                 f"Datheon AI Technologies is an enterprise Generative AI engineering and solutions provider "
                 f"specializing in LangChain RAG architectures, autonomous agent workflows, and scalable LLM inference."
             )

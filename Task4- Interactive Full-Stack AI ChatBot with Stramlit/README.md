@@ -1,6 +1,8 @@
 # Task 4: Interactive Full-Stack AI ChatBot with Streamlit
+**Author:** Muhammad Raihan Molla  
+**Internship Project:** Datheon Python + Generative AI & LangChain
 
-A production-grade, interactive browser-based Conversational AI application built with **Streamlit**, **LangChain**, and **Python 3**. Integrates real-time token streaming, multi-turn conversation memory with sliding-window session management, grounded Document Q&A (RAG) with page citations, and autonomous multi-tool agent execution in a responsive web interface.
+An interactive browser-based Conversational AI application built with **Streamlit**, **LangChain**, and **Python 3**. Integrates real-time token streaming, multi-turn conversation memory with sliding-window session management, grounded Document Q&A (RAG) with page citations, and autonomous multi-tool agent execution in a responsive web interface.
 
 ---
 

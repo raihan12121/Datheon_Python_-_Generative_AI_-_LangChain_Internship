@@ -1,13 +1,15 @@
 # Task 1: Structured LLM Prompt Pipeline & JSON Extractor
+**Author:** Muhammad Raihan Molla  
+**Internship Project:** Datheon Python + Generative AI & LangChain
 
-A production-grade, enterprise-ready Python pipeline for extracting strictly validated structured data from complex unstructured documents (Invoices and Resumes) using **Google Gemini** or **OpenAI**, parameterized prompt templates with few-shot exemplars, and **Pydantic v2** validation.
+A Python pipeline for extracting strictly validated structured data from complex unstructured documents (Invoices and Resumes) using **Google Gemini** or **OpenAI**, parameterized prompt templates with few-shot exemplars, and **Pydantic v2** validation.
 
 ---
 
 ## 📌 Problem Statement & Requirements
 > **Objective**: Connect Python to Google Gemini or OpenAI API, build parameterized prompt templates, and enforce strictly validated JSON outputs for invoice or resume analysis.
 >
-> **Deliverable**: An executable, production-ready script parsing complex unstructured text documents into validated JSON schemas.
+> **Deliverable**: An executable script parsing complex unstructured text documents into validated JSON schemas.
 
 ---
 
@@ -16,7 +18,7 @@ A production-grade, enterprise-ready Python pipeline for extracting strictly val
 1. **Multi-Provider LLM Integration**:
    - Supports **Google Gemini** (via both the official modern `google-genai` SDK and `google-generativeai`).
    - Supports **OpenAI** (via `openai` Python SDK with native JSON mode `response_format={"type": "json_object"}`).
-   - Automatic fallback: If one provider key is not configured, it can automatically leverage the alternate provider or fallback to offline mock mode for dry-runs.
+   - Automatic fallback: If one provider key is not configured, it can automatically leverage the alternate provider or fallback to offline mode for local testing.
 
 2. **Parameterized Prompt Engineering & Few-Shot Learning**:
    - Formulates prompts with injected Pydantic JSON schemas (`model_json_schema()`).
@@ -31,7 +33,7 @@ A production-grade, enterprise-ready Python pipeline for extracting strictly val
    - Pipeline intercepts schema validation failures or JSON parsing errors, feeds the specific error back to the LLM in an automated retry loop, and enforces valid output.
 
 5. **Complete Test Suite**:
-   - 9 automated unit and integration tests covering schema validation, edge case type coercion, prompt generation, JSON block extraction, and mock pipeline runs.
+   - 9 automated unit and integration tests covering schema validation, edge case type coercion, prompt generation, JSON block extraction, and pipeline runs.
 
 ---
 
@@ -52,7 +54,7 @@ Task1- Structured LLM Prompt Pipeline & Json Extractor/
 │
 ├── extractors/
 │   ├── __init__.py
-│   ├── llm_client.py            # Unified Gemini / OpenAI / Mock LLM Client
+│   ├── llm_client.py            # Unified Gemini / OpenAI / Offline LLM Client
 │   └── pipeline.py              # Extraction pipeline with retry & validation
 │
 ├── sample_inputs/

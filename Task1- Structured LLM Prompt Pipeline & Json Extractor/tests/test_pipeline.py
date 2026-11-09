@@ -12,8 +12,8 @@ from schemas.resume_schema import ResumeData
 
 class TestExtractionPipeline(unittest.TestCase):
     def setUp(self):
-        self.mock_client = LLMClient(provider="mock")
-        self.pipeline = StructuredExtractionPipeline(llm_client=self.mock_client)
+        self.client = LLMClient(provider="offline")
+        self.pipeline = StructuredExtractionPipeline(llm_client=self.client)
 
     def test_json_cleaner_removes_markdown_blocks(self):
         raw_markdown = '```json\n{"invoice_number": "INV-100", "subtotal": 100.0}\n```'
@@ -36,7 +36,7 @@ class TestExtractionPipeline(unittest.TestCase):
         self.assertIn("EXAMPLE DEMONSTRATION", user_p)
         self.assertIn("Acme Inc.", user_p)
 
-    def test_mock_invoice_extraction_pipeline(self):
+    def test_offline_invoice_extraction_pipeline(self):
         sample_text = "Urgent invoice INV-2024-9102 from Apex Digital Logistics Inc. Total: $5,940.00"
         result = self.pipeline.extract_invoice(sample_text)
         self.assertIsInstance(result, InvoiceData)
@@ -44,7 +44,7 @@ class TestExtractionPipeline(unittest.TestCase):
         self.assertEqual(result.vendor.name, "Apex Digital Logistics Inc.")
         self.assertEqual(result.total_amount, 5940.0)
 
-    def test_mock_resume_extraction_pipeline(self):
+    def test_offline_resume_extraction_pipeline(self):
         sample_text = "Elena Rostova, Lead ML Engineer with 6 years experience in NLP and PyTorch."
         result = self.pipeline.extract_resume(sample_text)
         self.assertIsInstance(result, ResumeData)

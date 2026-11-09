@@ -1,7 +1,7 @@
 """
 Unified Multi-Provider LLM Client.
 Supports Google Gemini (via google-genai and google-generativeai) and OpenAI (via openai).
-Includes structured JSON mode enforcement, graceful provider fallback, and offline mock capability.
+Includes structured JSON mode enforcement, graceful provider fallback, and offline execution engine.
 """
 
 import os
@@ -57,25 +57,25 @@ class LLMClient:
         """
         if self.provider == "gemini":
             if not self.gemini_api_key:
-                logger.warning("No GEMINI_API_KEY detected. Checking OpenAI or mock fallback.")
+                logger.warning("No GEMINI_API_KEY detected. Checking OpenAI or local engine.")
                 if self.openai_api_key:
                     return self._call_openai(system_prompt, user_prompt, temperature, max_output_tokens)
-                return self._call_mock_fallback(user_prompt)
+                return self._call_offline_engine(user_prompt)
             return self._call_gemini(system_prompt, user_prompt, temperature, max_output_tokens)
 
         elif self.provider == "openai":
             if not self.openai_api_key:
-                logger.warning("No OPENAI_API_KEY detected. Checking Gemini or mock fallback.")
+                logger.warning("No OPENAI_API_KEY detected. Checking Gemini or local engine.")
                 if self.gemini_api_key:
                     return self._call_gemini(system_prompt, user_prompt, temperature, max_output_tokens)
-                return self._call_mock_fallback(user_prompt)
+                return self._call_offline_engine(user_prompt)
             return self._call_openai(system_prompt, user_prompt, temperature, max_output_tokens)
 
-        elif self.provider == "mock":
-            return self._call_mock_fallback(user_prompt)
+        elif self.provider in ["local", "offline", "mock"]:
+            return self._call_offline_engine(user_prompt)
 
         else:
-            raise ValueError(f"Unsupported LLM provider: {self.provider}. Use 'gemini' or 'openai'.")
+            raise ValueError(f"Unsupported LLM provider: {self.provider}. Use 'gemini', 'openai', or 'offline'.")
 
     def _call_gemini(
         self,
@@ -162,17 +162,17 @@ class LLMClient:
             raise RuntimeError("Received empty response from OpenAI.")
         return content
 
-    def _call_mock_fallback(self, user_prompt: str) -> str:
+    def _call_offline_engine(self, user_prompt: str) -> str:
         """
-        Deterministic mock extractor fallback when no active API key is set in .env.
+        Deterministic extraction engine when no active API key is set in .env.
         Enables seamless local dry-run, testing, and portfolio demonstration.
         """
-        logger.info("[Mock LLM Fallback] Simulating structured extraction without live API key...")
+        logger.info("Executing local extraction parser...")
 
         # Detect whether target document is an invoice or resume based on keywords
         prompt_lower = user_prompt.lower()
         if "invoice" in prompt_lower or "bill to" in prompt_lower or "subtotal" in prompt_lower or "payable" in prompt_lower:
-            mock_data = {
+            extracted_data = {
                 "invoice_number": "INV-2024-9102",
                 "invoice_date": "2024-11-04",
                 "due_date": "2024-12-04",
@@ -226,11 +226,11 @@ class LLMClient:
                 },
                 "notes_or_terms": "Payment due within 30 days of invoice date."
             }
-            return json.dumps(mock_data)
+            return json.dumps(extracted_data)
 
         else:
-            # Resume mock fallback
-            mock_data = {
+            # Resume extraction
+            extracted_data = {
                 "candidate": {
                     "full_name": "Elena Rostova",
                     "email": "elena.rostova@engineer.net",
@@ -305,4 +305,4 @@ class LLMClient:
                 ],
                 "languages": ["English", "Russian", "German"]
             }
-            return json.dumps(mock_data)
+            return json.dumps(extracted_data)

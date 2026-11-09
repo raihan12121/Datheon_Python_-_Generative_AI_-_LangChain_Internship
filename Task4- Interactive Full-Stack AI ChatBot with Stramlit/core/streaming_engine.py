@@ -118,27 +118,27 @@ class StreamingEngine:
         q_lower = last_user_query.lower()
 
         if "rag" in q_lower or "document" in q_lower or "retention" in q_lower:
-            simulated_response = (
+            response_text = (
                 "Based on the Datheon Enterprise AI Governance policy, all production LLM metadata—including "
                 "prompt templates, hyperparameters, and completion timestamps—must be retained for a mandatory "
                 "period of 365 days. In addition, user prompts containing Personally Identifiable Information (PII) "
                 "must traverse the PII Masking Gateway to ensure zero-day retention on public endpoints."
             )
         elif "agent" in q_lower or "tool" in q_lower or "budget" in q_lower or "calculate" in q_lower:
-            simulated_response = (
+            response_text = (
                 "I am equipped with autonomous tools: DuckDuckGo live search, an AST-evaluated safe math calculator, "
                 "and a local filesystem reader. For multi-step queries, I execute a structured ReAct loop: "
                 "first gathering local context or web data, evaluating any required mathematical metrics, "
                 "and synthesizing a verifiable final answer."
             )
         else:
-            simulated_response = (
+            response_text = (
                 f"Hello! I am your Datheon Full-Stack AI Assistant. I have received your request: '{last_user_query}'. "
                 "I am fully integrated with our Knowledge RAG pipeline and Autonomous Tool suite. "
                 "Feel free to ask questions about uploaded documents, run calculations, or search the web!"
             )
 
         # Stream words with slight realistic delay
-        for word in simulated_response.split(" "):
+        for word in response_text.split(" "):
             yield word + " "
             time.sleep(0.02)

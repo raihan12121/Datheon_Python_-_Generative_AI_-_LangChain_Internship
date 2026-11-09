@@ -172,9 +172,9 @@ def main():
     )
     parser.add_argument(
         "--provider",
-        choices=["gemini", "openai", "mock"],
+        choices=["gemini", "openai", "offline", "mock"],
         default=None,
-        help="LLM provider override ('gemini', 'openai', or 'mock')",
+        help="LLM provider override ('gemini', 'openai', or 'offline')",
     )
     parser.add_argument(
         "--output",
