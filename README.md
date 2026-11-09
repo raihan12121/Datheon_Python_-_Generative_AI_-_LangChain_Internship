@@ -11,7 +11,7 @@ Repository containing 4 enterprise AI engineering projects covering LLM prompt p
 | **Task 1** | **[Structured LLM Prompt Pipeline & JSON Extractor](./Task1-%20Structured%20LLM%20Prompt%20Pipeline%20%26%20Json%20Extractor)** | ✅ **Completed** | Python 3, Pydantic v2, Google Gemini, OpenAI, Few-Shot Prompting |
 | **Task 2** | **[Document Q&A Assistant with RAG & Vector Embeddings](./Task2-%20Document%20Q%26A%20Assistant%20with%20Rag%20%26%20Vector%20Embeddings)** | ✅ **Completed** | LangChain, ChromaDB, RecursiveCharacterTextSplitter, Source Page Citations |
 | **Task 3** | **[Multi-Tool Autonomous AI Agent](./Task3-%20Multi-Tool%20Autonomous%20AI%20Agent)** | ✅ **Completed** | LangChain, ReAct Engine, DuckDuckGo Search, Safe Math AST, Local File Reader |
-| **Task 4** | **Interactive Full-Stack AI ChatBot with Streamlit** | 🔄 *Upcoming* | Streamlit, Multi-turn Chat, LLMs, UI/UX |
+| **Task 4** | **[Interactive Full-Stack AI ChatBot with Streamlit](./Task4-%20Interactive%20Full-Stack%20AI%20ChatBot%20with%20Stramlit)** | ✅ **Completed** | Streamlit, Real-Time Token Streaming, Session Memory, RAG & Agent Integration |
 
 ---
 
@@ -141,3 +141,47 @@ python main.py --query "Find the 2025 engineering budget in enterprise_budget_20
 # Start interactive console REPL
 python main.py --interactive
 ```
+
+---
+
+## 🌟 Task 4: Interactive Full-Stack AI ChatBot with Streamlit
+
+### Overview
+Wraps the enterprise Knowledge RAG and Autonomous Multi-Tool Agent pipelines into an interactive, full-stack browser-based web application using Streamlit:
+- **Real-time token streaming** via `st.write_stream` and generator pipelines
+- **Multi-turn conversation memory** with session state management (`st.session_state`) and sliding window pruning
+- **Knowledge RAG Mode** with dynamic PDF upload and expandable source citations
+- **Autonomous Agent Mode** with live ReAct reasoning trace status updates
+- **Chat export** in structured JSON and Markdown formats
+
+👉 **Full Project Documentation & Source Code**: [Task 4 Directory](./Task4-%20Interactive%20Full-Stack%20AI%20ChatBot%20with%20Stramlit)
+
+### 📸 Windows Terminal & Browser UI Screenshots & Proof
+
+#### 1. Interactive Full-Stack Streamlit Web Application (Browser View)
+![Streamlit Web UI](./Task4-%20Interactive%20Full-Stack%20AI%20ChatBot%20with%20Stramlit/screenshots/streamlit_ui_rag_chat.png)
+
+#### 2. Streamlit Web Server Launch on Windows
+![Streamlit Launch Terminal](./Task4-%20Interactive%20Full-Stack%20AI%20ChatBot%20with%20Stramlit/screenshots/streamlit_terminal_launch.png)
+
+#### 3. Automated Test Suite (8/8 Tests Passing)
+![Streamlit App Tests](./Task4-%20Interactive%20Full-Stack%20AI%20ChatBot%20with%20Stramlit/screenshots/streamlit_tests_run.png)
+
+---
+
+### Quick Start for Task 4
+
+```powershell
+# Navigate to Task 4 directory
+cd "Task4- Interactive Full-Stack AI ChatBot with Stramlit"
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run automated unit tests
+python -m unittest discover -v tests
+
+# Launch the Streamlit Web Application
+streamlit run app.py
+```
+*(Open your browser at `http://localhost:8501` to start chatting!)*
